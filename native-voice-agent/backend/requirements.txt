@@ -1,0 +1,5 @@
+Flask
+Flask-SocketIO
+pyttsx3
+python-socketio
+python-engineio
