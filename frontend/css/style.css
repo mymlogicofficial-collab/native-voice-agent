@@ -1,0 +1,51 @@
+/* CSS for accessible styling with high contrast support, focus indicators, keyboard navigation indicators, and professional company branding design */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* High Contrast Support */
+a {
+    color: #007BFF;
+}
+a:focus, a:hover {
+    color: #0056b3;
+    outline: 2px solid #FFCC00;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: 2px solid #FFCC00;
+}
+
+/* Styling for professional branding */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .button {
+        width: 100%;
+    }
+}
