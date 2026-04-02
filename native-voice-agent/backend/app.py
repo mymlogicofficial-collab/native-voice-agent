@@ -5,10 +5,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-# Explicitly define allowed origins for CORS
-CORS(app, resources={"/*": {"origins": ["http://localhost:3000", "http://localhost:5000"]}})  
+# FIXED CORS — allow ALL origins
+CORS(app, resources={r"/*": {"origins": "*"}})
 
-# Other configurations and routes
 @app.route('/')  
 def index():  
     return "Hello World!"  
