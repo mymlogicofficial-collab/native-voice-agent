@@ -26,5 +26,6 @@ def handle_message(message):
     response = generate_audio(message)
     emit('response', {'data': response})
 
-@socketio.on('message')if __name__ == '__main__':
+if __name__ == '__main__':
     socketio.run(app, host='0.0.0.0', port=5056, debug=True)
+
